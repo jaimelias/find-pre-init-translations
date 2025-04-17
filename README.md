@@ -42,7 +42,7 @@ When early translations run out of order, this plugin captures the hook, text, d
 - Browse your site or trigger the functionality you suspect runs too early.
 - Check `wp-content/debug.log` (or your PHP error log) for entries like:
   ```text
-  <br>Pre Init Translations - hook="plugins_loaded"; text="My String"; domain="my-plugin"; location="/path/to/file.php on line 123";<br>
+  Pre Init Translations - hook="plugins_loaded"; text="My String"; domain="my-plugin"; location="/path/to/file.php on line 123";
   ```
 - The log will show you:
   - **hook** where the translation was invoked

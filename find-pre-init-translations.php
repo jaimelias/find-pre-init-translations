@@ -62,7 +62,7 @@ add_filter( 'gettext', function( $translated, $text, $domain ) {
              : '(none)';
 
     $log = sprintf(
-        '<br>Pre Init Translations - hook="%s"; text="%s"; domain="%s"; location="%s";<br>',
+        'Pre Init Translations - hook="%s"; text="%s"; domain="%s"; location="%s";',
         $hook,
         $text,
         $domain,
@@ -70,7 +70,7 @@ add_filter( 'gettext', function( $translated, $text, $domain ) {
     );
 
     if ( defined( 'WP_DEBUG_DISPLAY' ) && WP_DEBUG_DISPLAY === true ) {
-        echo $log;
+        echo '<br>'.$log.'<br>';
     }
 
     error_log( $log );
